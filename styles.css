@@ -1,0 +1,137 @@
+body {
+    background-image: url('steveBg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Arial;
+}
+h3{
+    color: whitesmoke;
+}
+#brand{
+    color: blueviolet;
+    margin-left: 25px;
+}
+
+#container-1{
+    background-color: purple;
+}
+
+#container-2{
+    background-color: #009c5b;
+}
+
+#container-3{
+    background-color: darkmagenta;
+}
+
+#container-4{
+    background-color: #009c5b;
+}
+
+.side-text{
+    color:wheat;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 15px;
+    box-shadow: 2px 2px 2px #0000009c;
+    border-radius: 5px;
+}
+
+.side-text h3{
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.post{
+    background-color:darkmagenta;
+    width: 75%;
+    font-size: 16px;
+    margin: 15px 0px;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 2px 2px 2px #0000009c;
+}
+.post div:first-child{
+    margin-bottom: 15px;
+}
+
+.post div:nth-child(2){
+    font-size: 12px;
+    color: #009c5b;
+    border-top: 1px solid purple;
+    padding-top: 15px;
+}
+
+.post div:nth-child(2) a{
+    font-weight: bold;
+    display: block;
+}
+
+#post-form{
+    text-align: center;
+    height: 100px;
+    padding: 15px;
+    padding-bottom: 35px;
+    background-color: beige;
+    border-radius: 10px;
+}
+
+#post-form textarea{
+    font-size: 16px;
+    display: block;
+    width: 99%;
+    resize: none;
+    height: 60px;
+}
+
+#post-form button{
+    color: white;
+    background-color: #00897B;
+    font-size: 16px;
+    line-height: 45px;
+    border: azure;
+    width: 100%;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.post-list {
+    padding: 0px;
+}
+
+.mssgtxt{
+    color: wheat;
+}
+
+#wrapper {
+    width: 808px;
+    margin: 0px auto;
+}
+#wrapper a {
+    color: white;
+    text-decoration: none;
+}
+
+#wrapper a:hover{
+    text-decoration: underline;
+}
+
+#profile-area {
+    width: 28%;
+}
+
+#feed-area{
+    width: 72%;
+    padding-top: 10px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}

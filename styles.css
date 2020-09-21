@@ -1,32 +1,31 @@
 body {
-    background-image: url('steveBg.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
+    background-color: #E5F3FF;
     font-family: Arial;
 }
-h3{
-    color: whitesmoke;
-}
+
 #brand{
-    color: blueviolet;
+    color: #45277A;
     margin-left: 25px;
 }
 
 #container-1{
-    background-color: purple;
+    background-color: whitesmoke;
+    color: rgba(0, 0, 0, 0.753);
 }
 
 #container-2{
-    background-color: #009c5b;
+    background-color: #45277A;
+    color: whitesmoke;  
 }
 
 #container-3{
-    background-color: darkmagenta;
+    background-color: whitesmoke;
+    color: rgba(0, 0, 0, 0.753);
 }
 
 #container-4{
-    background-color: #009c5b;
+    background-color: #45277A;
+    color: whitesmoke;
 }
 
 .side-text{
@@ -35,8 +34,8 @@ h3{
     text-align: center;
     margin: 10px 0px;
     padding: 15px;
-    box-shadow: 2px 2px 2px #0000009c;
-    border-radius: 5px;
+    box-shadow: 2px 2px 2px #00000041;
+    border-radius: 5.5px;
 }
 
 .side-text h3{
@@ -44,14 +43,18 @@ h3{
     margin-bottom: 15px;
 }
 
+.post-list {
+    padding: 0px;
+}
+
 .post{
-    background-color:darkmagenta;
-    width: 75%;
+    background-color:whitesmoke;
     font-size: 16px;
     margin: 15px 0px;
-    border-radius: 5px;
     padding: 15px;
-    box-shadow: 2px 2px 2px #0000009c;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #0000009c;
+    list-style: none;
 }
 .post div:first-child{
     margin-bottom: 15px;
@@ -59,79 +62,115 @@ h3{
 
 .post div:nth-child(2){
     font-size: 12px;
-    color: #009c5b;
-    border-top: 1px solid purple;
+    color: #00b85c;
+    border-top: 1px solid #45277A;
     padding-top: 15px;
 }
 
 .post div:nth-child(2) a{
     font-weight: bold;
     display: block;
+    float: right;
 }
 
 #post-form{
     text-align: center;
     height: 100px;
+    background-color: whitesmoke;
     padding: 15px;
     padding-bottom: 35px;
-    background-color: beige;
     border-radius: 10px;
 }
 
 #post-form textarea{
-    font-size: 16px;
     display: block;
+    font-size: 16px;
     width: 99%;
     resize: none;
     height: 60px;
+    color: rgba(0, 0, 0, 0.753);
 }
 
 #post-form button{
     color: white;
-    background-color: #00897B;
+    background-color: #45277A;
     font-size: 16px;
     line-height: 45px;
-    border: azure;
-    width: 100%;
-    display: block;
     height: 45px;
-    line-height: 45px;
+    display: block;
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+    transition: all 0.5s;
+    border: 0px;
 }
 
-.post-list {
-    padding: 0px;
+#post-form button:hover {
+    background-color: #6537b4;
 }
 
 .mssgtxt{
-    color: wheat;
+    color: #45277A;
 }
 
 #wrapper {
-    width: 808px;
+    max-width: 808px;
     margin: 0px auto;
-}
-#wrapper a {
-    color: white;
-    text-decoration: none;
 }
 
 #wrapper a:hover{
-    text-decoration: underline;
+    color: #6d3ebe;
+    transition: all 0.5s;
 }
 
 #profile-area {
     width: 28%;
+    float: left;
 }
 
 #feed-area{
     width: 72%;
-    padding-top: 10px;
+    padding-top: 67px;
     padding-left: 15px;
     box-sizing: border-box;
+    float: left;
 }
 
-li {
-    list-style-type: none;
+@media(max-width: 650px){
+    #profile-area, #feed-area {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0px;
+    }
+    .side-text{
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        margin: 5px 0px;
+    }
+
+    .side-text:nth-child(even) {
+        margin-left: 3%;
+        width: 47%;
+    }
+
+    .box-content {
+        height: 100px;
+        margin-bottom: 15px;
+        overflow-y: auto;
+    }
+}
+
+@media(max-width: 480px){
+    .side-text {
+        width: 100%;
+    }
+    .side-text:nth-child(even) {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .box-content {
+        height: auto;
+      }
 }

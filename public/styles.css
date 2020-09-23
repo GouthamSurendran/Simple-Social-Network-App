@@ -5,13 +5,27 @@ body {
 
 #brand{
     color: #45277A;
-    margin-left: 25px;
+    margin-left: 0px;
+    text-align: center;
 }
 
 #brand a{
     color: #45277A;
+    display: inline-block;
+    overflow: hidden;
     text-decoration: none;
-    cursor: pointer;;
+    cursor: pointer;
+    background: linear-gradient(to right,#45277A 50%,rgb(184, 0, 0) 50%, #45277A);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 375ms ease;
+}
+
+#brand a:hover {
+    background-position: 0 100%
 }
 
 #container-1{
@@ -128,6 +142,7 @@ body {
     color: #6d3ebe;
     transition: all 0.5s;
     cursor: pointer;
+    font-size: 20;
 }
 
 #profile-area {
@@ -141,6 +156,14 @@ body {
     padding-left: 15px;
     box-sizing: border-box;
     float: left;
+}
+
+
+#tweet:focus {
+    outline: none !important;
+    border:1px solid #45277A ;
+    box-shadow: 0 0 2.5px #6d3ebe;
+    color: #00b85c;
 }
 
 @media(max-width: 650px){
@@ -181,3 +204,4 @@ body {
         height: auto;
       }
 }
+

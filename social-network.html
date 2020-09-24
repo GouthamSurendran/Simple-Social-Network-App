@@ -8,31 +8,7 @@
   {{>loginButtons}}
   <div id="wrapper">
     <div id="profile-area">
-        <div id="brand">
-            <h2><a href="index.html">SOCIOS</a></h2>
-        </div>
-        {{#if currentUser}}
-        <div id="container-1" class="side-text"><a class="textcolor">{{currentUser.username}}</a></div>
-        {{/if}}
-        <div id="container-2" class="side-text"><a class="textcolor">Socios Community</a></div>
-        {{#if currentUser}}
-        <div id="container-3" class="side-text">
-            <h3><a class="filter-user">Following</a></h3>
-            <div class="box-content">
-                <div><a class="filter-user">somebody</a></div>
-                <div><a class="filter-user">random guy1</a></div>
-                <div><a class="filter-user">random guy2</a></div>
-            </div>
-        </div>
-        <div id="container-4" class="side-text">
-            <h3><a class="filter-user">Followers</a></h3>
-            <div class="box-content">
-                <div><a class="filter-user">someguy1</a></div>
-                <div><a class="filter-user">someguy2</a></div>
-                <div><a class="filter-user">someguy3</a></div>
-            </div>
-        </div>
-        {{/if}}
+     {{>profilearea}}
     </div>
     <div id="feed-area">
       {{#if currentUser}}

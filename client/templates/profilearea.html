@@ -1,0 +1,27 @@
+<template name="profilearea">
+<div id="brand">
+    <h2><a href="index.html">SOCIOS</a></h2>
+</div>
+{{#if currentUser}}
+<div id="container-1" class="side-text"><a class="textcolor filter-user">{{currentUser.username}}</a></div>
+{{/if}}
+<div id="container-2" class="side-text"><a class="textcolor filter-com">Socios Community</a></div>
+{{#if currentUser}}
+<div id="container-3" class="side-text">
+    <h3><a class="filter-user">Following</a></h3>
+    <div class="box-content"> 
+        {{#each username in following}}
+        <div><a class="filter-user">{{username}}</a></div>
+        {{/each}}
+    </div>
+</div>
+<div id="container-4" class="side-text">
+    <h3><a class="filter-user">Followers</a></h3>
+    <div class="box-content">
+        {{#each followers}}
+        <div><a class="filter-user">{{username}}</a></div>
+        {{/each}}
+    </div>
+</div>
+{{/if}}
+</template>
